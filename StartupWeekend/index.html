@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Origen</title>
+</head>
+<body>
+    <h1>Página de Origen</h1>
+    <input id="search" type="text">
+    <button id="miBoton">Ir a la Nueva Página</button>
+    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 27 28" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.5 0.75C20.9511 0.75 27 6.79935 27 14.25C27 21.7011 20.9511 27.75 13.5 27.75C6.04935 27.75 0 21.7011 0 14.25C0 6.79935 6.04935 0.75 13.5 0.75ZM13.4595 5.82645L15.48 11.8474H22.0189L16.7287 15.5689L18.7497 21.59L13.4595 17.8689L8.1693 21.59L10.1903 15.5689L4.90005 11.8474H11.439L13.4595 5.82645Z" fill="#FEBD11"/>
+      </svg>
+
+    <script>
+        document.getElementById("miBoton").addEventListener("click", function() {
+            // Obtén los valores que deseas pasar como parámetros
+            var parametro1 = "Hola";
+            var parametro2 = "Mundo";
+
+            // Construye la URL con los parámetros de consulta
+            var nuevaPaginaURL = "pagina_destino.html?parametro1=" + parametro1 + "&parametro2=" + parametro2;
+
+            // Redirige a la nueva página
+            window.location.href = nuevaPaginaURL;
+        });
+    </script>
+</body>
+</html>
